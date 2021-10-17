@@ -1,0 +1,23 @@
+.social {
+  @include centerflex();
+}
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  @include centerflex();
+  border-radius: 22px;
+  height: 44px;
+  width: 44px;
+  background-color: $primary-white-color;
+  fill: $icon-background;
+  transition: background-color $primary-transition, fill $primary-transition;
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
