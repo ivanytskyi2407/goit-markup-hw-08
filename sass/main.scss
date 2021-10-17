@@ -1,0 +1,23 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/_visually-hidden.scss";
+@import "./utils/commons-style";
+
+// Студія
+
+@import "./components/_logo";
+@import "./components/header-page";
+@import "./components/social";
+@import "./components/btn";
+@import "./components/order";
+@import "./components/features";
+@import "./components/work-section";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/backdrop";
+@import "./components/modal";
+
+// Портфоліо
+@import "./components/menu-btns";
+@import "./components/services-portfolio";
