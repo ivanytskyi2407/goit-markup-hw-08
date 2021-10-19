@@ -1,0 +1,19 @@
+.cross-btn {
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .nav__icon-close,&.is-open .nav__icon-menu
+    {
+    display: none;
+    }
+
+    &.is-open .nav__icon-close
+    {
+        display: block;
+    }
+    
+}
+
+
