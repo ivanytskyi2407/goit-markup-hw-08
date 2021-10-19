@@ -1,0 +1,102 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-color-secondary;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.address {
+  margin-top: 20px;
+  font-style: inherit;
+}
+.address__item {
+  &:not(:first-child) {
+    margin-top: 9px;
+  }
+}
+.address__link {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-white-color;
+}
+.contacts__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+.footer__social {
+  margin-left: 70px;
+  margin-right: 93px;
+}
+.strong {
+  display: block;
+  color: $primary-white-color;
+  margin-bottom: 20px;
+}
+.footer__social-list {
+  display: flex;
+  margin-top: 20px;
+}
+.footer__social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer__social-link {
+  @include centerflex;
+  border-radius: 22px;
+  height: 44px;
+  width: 44px;
+  fill: $primary-white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $primary-transition;
+}
+.footer__social {
+  &-link:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+/* Рoзсилка */
+.subscription {
+  display: flex;
+}
+.subscription__input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 14px;
+  color: $primary-white-color;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  transition: border $primary-transition;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+.subscription__icon {
+  margin-left: 10px;
+}
+.subscription__btn {
+  @include centerflex;
+  background: $accent-color;
+  width: 200px;
+  height: 50px;
+  padding: 10px 27px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: $primary-white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
