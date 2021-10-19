@@ -26,13 +26,6 @@
         >
         <!-- site nav -->
         <nav class="nav">
-          <!-- <div><button type="button" class="cross-btn is-open "  aria-expanded="false"
-            aria-controls="mobile-menu">
-            <svg width="40" height="40" aria-label="переключатель мобильного меню">
-              <use class="nav__icon-menu" href="./image/icon.svg#icon-menu" ></use>
-              <use class="nav__icon-close" href="./image/icon.svg#icon-close"></use>
-            </svg>
-          </button></div> -->
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="./index.html"
@@ -47,6 +40,44 @@
             </li>
           </ul>
         </nav>
+
+        <button
+          type="button"
+          class="cross-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use class="nav__icon-menu" href="./image/icon.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <!-- мобільше меню -->
+        <div class="menu-container js-close-menu">
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="nav__icon-close"
+              href="./image/icon.svg#icon-close"
+            ></use>
+          </svg>
+          <div>
+            <a class="nav__link nav__link--current" href="./index.html"
+              >Студия</a
+            >
+          </div>
+          <div>
+            <a class="nav__link" href="./portfolio.html">Портфолио</a>
+          </div>
+          <div><a class="nav__link" href="">Контакты</a></div>
+        </div>
+
         <!-- /* ------Header contacts */ -->
         <ul class="contact">
           <li class="contact__item">
@@ -136,7 +167,7 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="section section--no-paddin-top">
+      <section class="section section--no-padding-top">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work">
