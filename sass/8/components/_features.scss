@@ -1,0 +1,29 @@
+.features {
+  display: flex;
+  margin-top: $section-services-gap;
+}
+.features__item {
+  flex-basis: calc(100% / 4);
+  &:not(:last-child) {
+    margin-right: $section-services-gap;
+  }
+}
+.features__box {
+  @include centerflex();
+  border-radius: 4px;
+  background-color: $background-button-portfolio;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.features__title {
+  color: $title-text-color;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features__description {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
