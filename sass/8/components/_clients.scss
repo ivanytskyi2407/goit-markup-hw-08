@@ -1,0 +1,23 @@
+.client {
+  @include centerflex();
+}
+.client__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.client__link {
+  @include centerflex();
+  width: 170px;
+  height: 92px;
+  border: 1px solid $icon-background;
+  border-radius: 4px;
+  color: $icon-background;
+  fill: currentColor;
+  transition: fill $primary-transition, border-color $primary-transition;
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
