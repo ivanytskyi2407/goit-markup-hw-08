@@ -1,0 +1,38 @@
+.menu-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.menu-conteiner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary-white-color;
+  transform: translatex(100%);
+}
+.menu-conteiner.is-open {
+  transform: translateX(0);
+}
+.menu-btn.js-close-menu {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.icon-cross,
+.icon-menu {
+  fill: currentColor;
+  transition: $primary-transition;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
