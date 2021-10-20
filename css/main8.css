@@ -141,15 +141,6 @@ ul {
   background-color: transparent;
 }
 
-.cross-btn .nav__icon-close,
-.cross-btn.is-open .nav__icon-menu {
-  display: none;
-}
-
-.cross-btn.is-open .nav__icon-close {
-  display: block;
-}
-
 .menu-container {
   position: fixed;
   left: 0;
