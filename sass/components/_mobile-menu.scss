@@ -1,0 +1,51 @@
+.menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+    background-color: transparent;
+  @media screen and(min-width:768px)
+      {
+        display: none;
+      }
+      &:hover,
+      &:focus {
+      color: $accent-color;
+      fill: currentColor;
+  }
+}
+.menu-btn.js-close-menu {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.menu-conteiner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $primary-white-color; 
+  transform: translatex(150%);
+  transition: transform 250ms ease-in-out;
+      
+      @media screen and(min-width:768px)
+      {
+        display: none;
+      }
+      &.is-open{
+        transform: translateX(0);
+      }
+      
+}
+
+
