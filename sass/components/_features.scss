@@ -9,6 +9,7 @@
   }
 }
 .features__item {
+  width: 100%;
   @media screen and (min-width: 480px) {
     &:not(:last-child) {
       margin-bottom: $section-services-gap;
