@@ -265,6 +265,7 @@ ul {
   .contact__item:last-child .contact__link {
     font-size: 34px;
     line-height: 1.18;
+    margin-bottom: 32px;
     color: #2196f3;
   }
 }
@@ -333,6 +334,7 @@ ul {
     height: 100vh;
     padding: 48px 40px;
     background-color: #ffffff;
+    transform: translatex(150%);
     transition: transform 250ms ease-in-out;
   }
 }
@@ -367,7 +369,8 @@ ul {
 @media screen and (max-width: 767px) {
   .soc-block {
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
   }
 }
 
