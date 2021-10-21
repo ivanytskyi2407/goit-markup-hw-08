@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
@@ -9,10 +10,7 @@
   justify-content: flex-start;
 }
 .nav {
-  @media screen and (min-width: 480px) {
-    margin-left: auto;
-  }
-  @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
@@ -20,7 +18,7 @@
 }
 .nav__list {
   display: flex;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
@@ -65,7 +63,7 @@
   @include centerflex();
   margin-left: auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
