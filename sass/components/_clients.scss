@@ -1,5 +1,5 @@
 .client {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -11,7 +11,7 @@
   }
 }
 .client__item {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin: 15px;
     width: calc((100% - 60px) / 2);
   }
