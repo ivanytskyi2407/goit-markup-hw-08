@@ -38,9 +38,26 @@
               height="40"
               aria-label="переключатель мобильного меню"
             >
-              <use class="icon-menu" href="./image/icon.svg#icon-menu"></use>
+              <use href="./image/icon.svg#icon-menu"></use>
             </svg>
           </button>
+          
+          </div>
+          <!-- Мобільне меню -->
+          <div class="menu-conteiner js-menu-container" id="mobile-menu">
+            <!-- close -->
+            <button
+              type="button"
+              class="menu-btn js-close-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                <use href="./image/icon.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            
+<!-- navigation -->
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="./index.html"
@@ -77,19 +94,7 @@
       </div>
     </header>
     <!-- menu -->
-    <div class="menu-conteiner js-menu-container" id="mobile-menu">
-      <!-- close -->
-      <button
-        type="button"
-        class="menu-btn js-close-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg width="40" height="40" aria-label="переключатель мобильного меню">
-          <use class="icon-cross" href="./image/icon.svg#icon-close_40px"></use>
-        </svg>
-      </button>
-    </div>
+    
     <!--Main-->
     <main>
       <!--Заказ услуг-->
