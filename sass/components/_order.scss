@@ -33,11 +33,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $primary-white-color;
-
-  @media screen and (max-width: 767px) {
+  // одинаковий падінг внизу
+  @media screen and (max-width: 1199px) {
     padding-top: 118px;
-  }
-  @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
     font-weight: 900;
