@@ -1,5 +1,11 @@
 .services {
   display: block;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
   @media screen and(min-width:1200px) {
     display: flex;
     flex-wrap: wrap;
@@ -9,10 +15,14 @@
 }
 
 .services__item {
-  margin-top: $section-services-gap;
+  @media screen and(min-width:768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: $section-services-gap;
+  }
   @media screen and(min-width:1200px) {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: $section-services-gap;
+    margin-top: $section-services-gap;
   }
 }
 .services__link {
