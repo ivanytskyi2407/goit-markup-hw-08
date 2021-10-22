@@ -5,11 +5,12 @@
   border-bottom-color: #ececec;
 }
 .header__container {
-  height: 80px;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @media screen and(min-width:768px) {
+    height: 80px;
+  }
 }
 .nav {
   @media screen and (min-width: 768px) {
