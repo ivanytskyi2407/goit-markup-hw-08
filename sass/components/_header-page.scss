@@ -141,9 +141,6 @@
   &:focus {
     color: $accent-color;
   }
-  @media screen and (min-width: 768px){
-    // padding: 32px 0;
-  }
 }
 .contack__icon {
   fill: currentColor;
