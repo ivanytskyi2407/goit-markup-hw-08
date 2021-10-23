@@ -12,8 +12,6 @@
     height: 80px;
     justify-content: space-between;
   }
-  @media screen and(min-width:1200px) {
-  }
 }
 .nav {
   @media screen and (min-width: 768px) {
@@ -98,16 +96,15 @@
 }
 
 .contact__item {
-  @media screen and (max-width:1199px) {
+  @media screen and (max-width: 1199px) {
     &:first-child {
       margin-bottom: 10px;
     }
   }
-  
+
   @media screen and (min-width: 1200px) {
     &:not(:first-child) {
       margin-left: 50px;
-      
     }
   }
 }
