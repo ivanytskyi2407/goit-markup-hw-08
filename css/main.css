@@ -507,7 +507,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .features {
     display: flex;
     flex-wrap: wrap;
@@ -540,7 +540,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .features__item {
-    flex-basis: calc(100% / 4);
+    flex-basis: calc((100% - 120px) / 4);
+    margin: 15px;
   }
 }
 
@@ -845,7 +846,6 @@ ul {
 /* Рoзсилка */
 @media screen and (max-width: 1199px) {
   .footer__subscription {
-    width: 450px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
@@ -866,6 +866,7 @@ ul {
 
 .subscription__input {
   width: 100%;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   color: #ffffff;
