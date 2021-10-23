@@ -162,7 +162,15 @@
             <li class="services__item">
               <a class="services__link" href="">
                 <div class="services__thumb">
-                  <img src="./image/portfolio/Poster.jpg" alt="Постер" />
+                  <img
+                    srcset="
+                      ./image/portfolio/poster.jpg   1x,
+                      ./image/portfolio/poster@2.jpg 2x
+                    "
+                    src="./image/portfolio/poster.jpg"
+                    alt="Постер"
+                    width="370"
+                  />
                   <div class="services__overlay">
                     <p class="services__overlay--text">
                       Технокряк это современная площадка распространения
@@ -173,7 +181,9 @@
                   </div>
                 </div>
                 <div class="services__box">
-                  <h2 class="services__title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="services__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="services__text">Дизайн</p>
                 </div>
               </a>
