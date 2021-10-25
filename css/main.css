@@ -466,11 +466,29 @@ ul {
   width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/image/mobile/order.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+}
+
+@media (min-resolution: 2dppx) {
+  .order {
+    background-image: url(/image/mobile/order@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order {
+    background-image: url(/image/tablet/order.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(/image/tablet/order@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -478,6 +496,13 @@ ul {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(/image/desctop/order.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(/image/desctop/order@2x.jpg);
   }
 }
 
