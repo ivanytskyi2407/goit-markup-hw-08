@@ -85,8 +85,7 @@
 /* Рoзсилка */
 .footer__subscription {
   @media screen and(max-width:1199px) {
-    margin-left: auto;
-    margin-right: auto;
+    @include Margin-L-R-auto;
     margin-top: 60px;
   }
 }

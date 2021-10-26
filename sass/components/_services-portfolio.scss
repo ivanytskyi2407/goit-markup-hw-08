@@ -7,17 +7,11 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and(min-width:1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
 }
 
 .services__item {
   @media screen and(max-width:767px) {
-    margin-right: auto;
-    margin-left: auto;
+    @include Margin-L-R-auto;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -33,7 +27,6 @@
 }
 .services__link {
   transition: box-shadow $primary-transition;
-
   &:hover,
   &:focus {
     transform: translateY(0);

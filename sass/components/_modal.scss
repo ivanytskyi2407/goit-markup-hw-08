@@ -32,8 +32,7 @@
   border-radius: 4px;
   transition: transform $primary-transition;
   max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
+  @include Margin-L-R-auto;
   height: auto;
   padding: 40px;
   @media screen and(min-width:1200px) {
