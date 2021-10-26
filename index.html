@@ -217,7 +217,10 @@
           <ul class="team">
             <li class="team__item">
               <picture>
-                
+                <source srcset="./image/igor.jpg 1x, ./image/igor@2x.jpg 2x" media="(max-width: 767px)"/>
+                <source srcset="./image/tablet/igor.jpg 1x, ./image/tablet/igor@2x.jpg 2x" media="(max-width: 1199px)"/>
+                <source srcset="./image/desctop/igor.jpg 1x, ./image/desctop/igor@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./image/igor.jpg" alt="Игорь Демьяненко">
               </picture>
               <div class="team__container">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -255,13 +258,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                srcset="./image/olga.jpg 1x, ./image/olga@2x.jpg 2x"
-                src="./image/olga.jpg"
-                alt="Ольга Репина"
-              />
-              <div class="team__container">
+              <picture>
+                <source srcset="./image/olga.jpg 1x, ./image/olga@2x.jpg 2x" media="(max-width: 767px)" />
+                <source srcset="./image/tablet/olga.jpg 1x, ./image/tablet/olga@2x.jpg 2x" media="(max-width: 1199px)" />
+                <source srcset="./image/desctop/olga.jpg 1x, ./image/desctop/olga@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./image/olga.jpg" alt="Ольга Репина">
+              </picture>
+                 <div class="team__container">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p>Frontend Developer</p>
                 <ul class="social">
@@ -297,13 +300,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                srcset="./image/nikolaj.jpg 1x, ./image/nikolaj@2x.jpg 2x"
-                src="./image/nikolaj.jpg"
-                alt="Николай Тарасов"
-              />
-              <div class="team__container">
+              <picture>
+                <source srcset="./image/nikolaj.jpg 1x, ./image/nikolaj@2x.jpg 2x" media="(max-width: 767px)" />
+                <source srcset="./image/tablet/nikolaj.jpg 1x, ./image/tablet/nikolaj@2x.jpg 2x" media="(max-width: 1199px)" />
+                <source srcset="./image/desctop/nikolaj.jpg 1x, ./image/desctop/nikolaj@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./image/nikolaj.jpg" alt="Николай Тарасов">
+              </picture>
+                <div class="team__container">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p>Marketing</p>
                 <ul class="social">
@@ -339,12 +342,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                srcset="./image/misha.jpg 1x, ./image/misha@2x.jpg 2x"
-                src="./image/misha.jpg"
-                alt="Михаил Ермаков"
-              />
+            <picture>
+              <source srcset="./image/misha.jpg 1x, ./image/misha@2x.jpg 2x" media="(max-width: 767px)" />
+              <source srcset="./image/tablet/misha.jpg 1x, ./image/tablet/misha@2x.jpg 2x" media="(max-width: 1199px)" />
+              <source srcset="./image/desctop/misha.jpg 1x, ./image/desctop/misha@2x.jpg 2x" media="(min-width: 1200px)" />
+              <img src="./image/misha.jpg" alt="Михаил Ермаков">
+            </picture>
               <div class="team__container">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p>UI Designer</p>
@@ -527,10 +530,10 @@
             <use href="./image/icon.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="form" action="">
+        <form action="">
           <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
           <!-- Имя -->
-          <div class="form__field">
+          <div class="form">
             <label for="name" class="form__label">Имя</label>
             <input class="form__input" type="text" name="name" id="name" />
             <svg class="form__icon" width="15" height="12">
@@ -538,7 +541,7 @@
             </svg>
           </div>
           <!-- Телефон -->
-          <div class="form__field">
+          <div class="form">
             <label for="tel" class="form__label">Телефон</label>
             <input class="form__input" type="tel" name="tel" id="tel" />
             <svg class="form__icon" width="15" height="12">
@@ -546,7 +549,7 @@
             </svg>
           </div>
           <!-- Мейл -->
-          <div class="form__field">
+          <div class="form">
             <label for="email" class="form__label">Почта</label>
             <input class="form__input" type="email" name="email" id="email" />
             <svg class="form__icon" width="15" height="12">
@@ -554,7 +557,7 @@
             </svg>
           </div>
           <!-- Коментарий -->
-          <div class="form__field">
+          <div class="form">
             <label for="coments" class="form__label">Коментарий</label>
             <textarea
               name="coments"
@@ -574,10 +577,7 @@
               class="checkbox"
             />
             <span class="checkbox__icon"> </span>
-            <span
-              >Соглашаюсь срассылкой и принимаю
-              <a href="" class="checkbox__link"> Условия договора</a></span
-            >
+            <span>Соглашаюсь срассылкой и принимаю<a href="" class="checkbox__link"> Условия договора</a></span>
           </label>
           <button type="submit" class="btn Form-btn-submit">Отправить</button>
         </form>

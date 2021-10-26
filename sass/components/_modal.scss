@@ -19,7 +19,7 @@
     padding-right: 15px;
     padding-left: 15px;
   }
-  @media screen and(max-width:1199px) {
+  @media screen and(min-width:768px) and(max-width:1199px) {
     padding-top: 208px;
   }
 }
@@ -35,10 +35,11 @@
   margin-left: auto;
   margin-right: auto;
   height: auto;
+  padding: 40px;
   @media screen and(min-width:1200px) {
     position: absolute;
-    min-width: 530px;
-    min-height: 580px;
+    min-width: 528px;
+    min-height: 581px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -70,18 +71,17 @@
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
   margin: 0 auto;
   margin-bottom: 12px;
+  @media screen and(min-width:1200px) {
+    line-height: 1.15;
+  }
 }
 .form {
-  padding: 40px;
-}
-
-.form__field {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -127,6 +127,7 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
+  height: 120px;
 }
 
 .form__input,
@@ -139,7 +140,6 @@
 /* Соглашение */
 .checkbox__label {
   @include centerflex;
-  margin-bottom: 30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $primary-text-color;
