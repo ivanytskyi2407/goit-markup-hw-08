@@ -11,8 +11,14 @@
 }
 .menu__item {
   margin-right: 8px;
+  &:last-child {
+    margin-right: 0px;
+  }
   @media screen and(max-width:767px) {
     margin-bottom: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
 }
 

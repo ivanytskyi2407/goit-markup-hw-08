@@ -7,19 +7,14 @@
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   @media screen and(min-width:768px) {
     height: 80px;
   }
 }
-.nav {
-  @media screen and (min-width: 768px) {
-    margin-left: 88px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-  }
-}
+// .nav {
+
+// }
 .nav__list {
   display: block;
   text-align: start;
@@ -80,7 +75,7 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: start;
-    margin-top: 302px;
+    margin-top: auto;
   }
   @media screen and (min-width: 1200px) {
     @include centerflex();
