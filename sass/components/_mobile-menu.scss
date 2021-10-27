@@ -28,7 +28,8 @@
   display: flex;
 
   @media screen and (max-width: 767px) {
-    display: block;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;

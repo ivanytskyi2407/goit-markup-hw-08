@@ -226,12 +226,6 @@ ul {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .contact__item:first-child {
-    margin-bottom: 10px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .contact__item:not(:first-child) {
     margin-left: 50px;
@@ -254,7 +248,7 @@ ul {
   .contact__item:first-child .contact__link {
     font-size: 24px;
     line-height: 1.18;
-    margin-bottom: 64px;
+    margin-bottom: 44px;
   }
   .contact__item:last-child .contact__link {
     font-size: 34px;
@@ -319,7 +313,8 @@ ul {
 
 @media screen and (max-width: 767px) {
   .menu-conteiner {
-    display: block;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
