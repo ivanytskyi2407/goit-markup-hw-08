@@ -80,7 +80,7 @@
     flex-direction: column-reverse;
     justify-content: start;
   }
-  / @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     @include centerflex();
   }
 }
